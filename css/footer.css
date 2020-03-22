@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ### Primary */
+:root {
+    --cyan: hsl(180, 66%, 49%);
+    --dark-violet: hsl(257, 27%, 26%);
+    /* // Secondary // */
+    --red: hsl(0, 87%, 67%);
+    /* Neutral */
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-section {
+    text-align: center;
+    background: url(../images/bg-boost-desktop.svg) no-repeat center center/cover;
+    background-color:  var(--very-dark-blue);
+    padding: 3rem;
+}
+
+.footer-section h1 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section .btn {
+    padding: 0.75rem 2rem;
+}
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 25% 20% 20% 15% 20%;
+    margin-top: 1.75rem;
+}
+
+.bottom-section .logo {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+#footer {
+    background: var(--very-dark-violet);
+}
+
+.bottom-section ul :first-child {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.bottom-section li {
+    color: hsl(252, 3%, 62%);
+    list-style: none;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.social-icons {
+    color: #fff;
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons i {
+     margin: 0 0.7rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+@media(max-width: 850px){
+    .bottom-section {
+        grid-template-columns: none;
+        text-align: center;
+        grid-gap: 1rem;
+    }
+
+    .bottom-section .logo {
+        margin: 1rem auto;
+    }
+
+     .social-icons {
+         justify-content: center;
+     }
+}
+
+@media(max-width: 500px){
+    .footer-section h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media(max-width: 450px){
+    .footer-section {
+        background-image: url(../images/bg-boost-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    
+}
+
